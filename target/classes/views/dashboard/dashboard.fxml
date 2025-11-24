@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.thereadingroom.ui.dashboard.DashboardController">
+
+    <!-- LEFT SIDEBAR -->
+    <VBox spacing="20" prefWidth="180" style="-fx-background-color: #2b2b2b; -fx-padding: 20;">
+        <Button text="Books" onAction="#goToBooks" prefWidth="150"/>
+        <Button text="Friends" onAction="#goToFriends" prefWidth="150"/>
+        <Button text="Discussions" onAction="#goToDiscussions" prefWidth="150"/>
+        <Button text="Logout" onAction="#logout" prefWidth="150"/>
+    </VBox>
+
+    <!-- MAIN CONTENT -->
+    <Label text="Welcome to The Reading Room!"
+           style="-fx-font-size: 28; -fx-padding: 40;" />
+</BorderPane>
