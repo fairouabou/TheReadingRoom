@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.thereadingroom.ui.AdminDashboardController"
+            prefWidth="1000" prefHeight="650"
+            style="-fx-background-color: #F8F1E7;">
+
+    <!-- Left Sidebar -->
+    <VBox spacing="20" prefWidth="220"
+          style="-fx-background-color: #E8D9C5; -fx-padding: 30;">
+
+        <Label text="Admin Panel"
+               style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+
+        <Button text="Manage Books"
+                fx:id="booksButton"
+                onAction="#onBooks"
+                style="-fx-background-color: #D7C4A3; -fx-font-size: 16px;"/>
+
+        <Button text="Manage Users"
+                fx:id="usersButton"
+                onAction="#onUsers"
+                style="-fx-background-color: #D7C4A3; -fx-font-size: 16px;"/>
+
+        <Button text="Manage Discussions"
+                fx:id="discussionsButton"
+                onAction="#onDiscussions"
+                style="-fx-background-color: #D7C4A3; -fx-font-size: 16px;"/>
+
+        <Separator/>
+
+        <Button text="Log Out"
+                onAction="#onLogout"
+                style="-fx-background-color: #C8935B; -fx-font-size: 16px;"/>
+    </VBox>
+
+    <!-- Main content placeholder -->
+    <StackPane fx:id="contentArea"
+               style="-fx-padding: 40;">
+        <Label text="Select an option from the left menu."
+               style="-fx-font-size: 18px;"/>
+    </StackPane>
+
+</BorderPane>
